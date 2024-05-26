@@ -1,0 +1,20 @@
+<p>labs works!</p>
+
+<h2> {{ 'Hola'.repeat(4) }} </h2>
+<p>La suma de 3 + 3 es {{ 3 + 3 }} </p>
+
+<h2>Hola, mi nombre es: {{ name() }} </h2>
+
+<img [src]="img" alt="">
+<input type="text" [value]="name()">
+<button [disabled]="disabled">Click me</button>
+
+<button (click)="clickHandle()">Click oli</button>
+<button (dblclick)="clickHandle()">Click double</button>
+
+<input type="number" [value]="age" (change)="inputHandle($event)">
+
+<p>(keydown)</p>
+<input type="text" [name]="name()" (keydown)="inputHandleKeyDown($event)">
+
+<input type="text" [value]="name()" (change)="inputHandle($event)">
